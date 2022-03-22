@@ -38,10 +38,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                    <?php utils::artCount($this->cid); ?>
                 </span>
                     </div>
-                    <a href="<?php $this->permalink(); ?>" class="post-title">
+                    <a href="<?php $this->permalink(); ?>" class="post-title" style="font-size: 1.2rem">
                         <?php $this->title(); ?>
                     </a>
-                    <div class="post-excerpt">
+                    <div class="post-excerpt" style="font-size: 0.8rem;">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-neirong"></use>
                         </svg>

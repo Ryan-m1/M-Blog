@@ -106,7 +106,7 @@ class utils
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#' . $navArr[$start - $count] . '"></use>
                             </svg>
-                            <span class="nav-item-text">' . $pages->title . '</span>
+                            <span class="nav-item-text" style="font-size: 1.0rem;">' . $pages->title . '</span>
                     </a>
                 </div>';
                 $count--;
@@ -116,7 +116,7 @@ class utils
                             <svg class="icon" aria-hidden="true">
                                 <use xlink:href="#icon-daohang"></use>
                             </svg>
-                            <span class="nav-item-text">' . $pages->title . '</span>
+                            <span class="nav-item-text" style="font-size: 1.0rem;">' . $pages->title . '</span>
                     </a></div>';
             }
         }

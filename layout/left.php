@@ -11,12 +11,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
     <div class="nav-menu" style="position: relative;box-shadow: 0px 2px 13px rgba(0,0,0,0.3),0px 3px 2px rgba(0,0,0,0.1) inset;">
         <nav class="nav flex-column" style="border-radius:5px">
             <div class="nav-item">
-                <a<?php if ($this->is('index')): ?> class="nav-link active"<?php else: ?> class="nav-link"<?php endif; ?>
+                <a<?php if ($this->is('index')): ?>  class="nav-link active"<?php else: ?> class="nav-link"<?php endif; ?>
                         href="<?php $this->options->siteUrl(); ?>">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-shouye"></use>
                     </svg>
-                    <span class="nav-item-text"><?php _e('首页'); ?></span>
+                    <span class="nav-item-text" style="font-size: 1.0rem;"><?php _e('首页'); ?></span>
                 </a>
             </div>
             <div class="nav-item">
@@ -25,7 +25,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-fenlei4-copy"></use>
                     </svg>
-                    <span class="nav-item-text">分类&#x25bc;</span>
+                    <span class="nav-item-text" style="font-size: 1.0rem;">分类&#x25bc;</span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="MenuSort">
                     <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
@@ -48,7 +48,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-shezhi"></use>
                     </svg>
-                    <span class="nav-item-text">后台</span>
+                    <span class="nav-item-text" style="font-size: 1.0rem;">后台</span>
                 </a>
             </div>
         <?php endif; ?>
